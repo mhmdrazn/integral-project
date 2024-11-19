@@ -1,27 +1,58 @@
 "use client"
-import React, { useState } from 'react';
+
 import Image from 'next/image';
+import Link from 'next/link';
 
-const Navbar: React.FC = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+import React from 'react';
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
+import { useState } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { HiOutlineX } from 'react-icons/hi';
+import { HiMenuAlt3 } from 'react-icons/hi';
+
+export default function navbar(){
+  const [show, setShow] = useState(false);
+  const controls = useAnimation();
+
+  React.useEffect(() => {
+      if (show) {
+          controls.start({opacity: 1, x:0});
+      } else {
+          controls.start({opacity: 0, y:0});
+      }
+  }, [show, controls]);
+
+  const handleOnClick = () => {
+      setShow(!show);
+  }
 
   return (
-    <nav className="navbar">
-      <a href="#home" className="logo">
-        <Image src="/assets/logo-kecil.png" alt='logo-ideal' fill></Image>
+    <div className="flex flex-row items-center justify-between px-52 fixed min-h-20 w-screen z-50">
+      <a href="#">
+        <Image src="/assets/logo-ideal.png" width={85.71} height={40} alt="Logo" />
       </a>
-      <button className="hamburger" onClick={toggleMenu}>
-        ☰
-      </button>
-      <ul className={`nav-links ${menuOpen ? 'show' : ''}`}>
-        <li>Home</li>
-        <li>Event</li>
-        <li>About Us</li>
-      </ul>
-    </nav>
-  );
-};
 
-export default Navbar;
+      <div className=''>
+        <ul className='flex flex-row gap-16'>
+          <Link href="/"><li className='font-semibold text-[#333333]'>Home</li></Link>
+          <Link href="/about-us"><li className='font-medium text-[#919191]'>Event</li></Link>
+          <Link href="/events"><li className='font-medium text-[#919191]'>About Us</li></Link>
+        </ul>
+      </div>
+
+      {/* <div>
+        {show ? (
+            <HiOutlineX 
+            size={25} 
+            className='cursor-pointer md:hidden'
+            onClick={() => setShow(false)}/>
+        ) : (
+            <HiMenuAlt3 
+            size={25} 
+            className='cursor-pointer md:hidden'                    
+            onClick={() => setShow(true)}/>
+        )}
+      </div> */}
+    </div>
+  );
+}
