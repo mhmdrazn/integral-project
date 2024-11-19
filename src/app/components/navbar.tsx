@@ -11,23 +11,23 @@ import { HiOutlineX } from 'react-icons/hi';
 import { HiMenuAlt3 } from 'react-icons/hi';
 
 export default function navbar(){
-  const [show, setShow] = useState(false);
-  const controls = useAnimation();
+  // const [show, setShow] = useState(false);
+  // const controls = useAnimation();
 
-  React.useEffect(() => {
-      if (show) {
-          controls.start({opacity: 1, x:0});
-      } else {
-          controls.start({opacity: 0, y:0});
-      }
-  }, [show, controls]);
+  // React.useEffect(() => {
+  //     if (show) {
+  //         controls.start({opacity: 1, x:0});
+  //     } else {
+  //         controls.start({opacity: 0, y:0});
+  //     }
+  // }, [show, controls]);
 
-  const handleOnClick = () => {
-      setShow(!show);
-  }
+  // const handleOnClick = () => {
+  //     setShow(!show);
+  // }
 
   return (
-    <div className="flex flex-row items-center justify-between px-52 fixed min-h-20 w-screen z-50">
+    <div className="flex flex-row items-center justify-between px-4 md:px-16 lg:px-52 fixed min-h-20 w-full bg-background">
       <a href="#">
         <Image src="/assets/logo-ideal.png" width={85.71} height={40} alt="Logo" />
       </a>
