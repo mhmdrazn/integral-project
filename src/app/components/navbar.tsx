@@ -35,8 +35,8 @@ export default function navbar(){
       <div className=''>
         <ul className='flex flex-row gap-16'>
           <Link href="/"><li className='font-semibold text-[#333333]'>Home</li></Link>
-          <Link href="/about-us"><li className='font-medium text-[#919191]'>Event</li></Link>
-          <Link href="/events"><li className='font-medium text-[#919191]'>About Us</li></Link>
+          <Link href="/events"><li className='font-medium text-[#919191]'>Event</li></Link>
+          <Link href="/about-us"><li className='font-medium text-[#919191]'>About Us</li></Link>
         </ul>
       </div>
 
