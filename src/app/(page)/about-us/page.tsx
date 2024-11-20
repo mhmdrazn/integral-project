@@ -21,7 +21,9 @@ export default function layout() {
         </div>
 
         <Image src='/assets/main-ideal.png' alt="main-ideal" height={370} width={370} className="hidden md:flex"></Image>
-      </section>
+
+        <Image src='/assets/main-ideal.png' alt="main-ideal" height={370} width={370} className="hidden md:flex"></Image>
+        </section>
     </div>
   )
 }
