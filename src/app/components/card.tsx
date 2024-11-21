@@ -1,5 +1,5 @@
 import Image from 'next/image';
-interface CardProps {
+interface CardProps {https://github.com/mhmdrazn/integral-project/pull/5/conflict?name=src%252Fapp%252F%2528page%2529%252Fevents%252Fpage.tsx&ancestor_oid=af624daf4c50d9fd52709cf9a7673097f2a8b058&base_oid=03b6aefde4872fefe27e1b464076a9834fc9f12d&head_oid=602f6f1c70bc023fe3d16761d74315da402fa9e1
     img: string;
     title: string;
     price: string | number; // Mengizinkan tipe string atau number
