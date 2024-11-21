@@ -1,11 +1,13 @@
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Image from "next/image";
+import Card from '@/app/components/card';
+import { kegiatanKami } from "./data/card";
 
 export default function Home() {
   return (
     <main className="w-full min-h-screen flex flex-col">
-       <Navbar highlight="Home" />
+      <Navbar highlight="Home" />
 
       {/* Hero section */}
       <section className="md:mt-20 mt-12 px-12 md:px-16 lg:px-52 gap-24 items-center justify-center flex md:flex-row flex-col min-h-[700px] lg:h-[640px] bg-white h-screen">
@@ -52,6 +54,20 @@ export default function Home() {
               <div className="font-semibold text-2xl">Leadership</div>
             </div>
             <div className="text-lg text-center text-[#101828]">Be a Force For Change</div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className=' bg-white flex flex-col place-items-center pb-24'>
+          <div className="flex flex-row justify-center items-center py-16 px-4">
+            <h1 className="lg:leading-tight font-bold text-[#046CC9] text-4xl text-center">Kegiatan Terbaru</h1>    
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 w-full max-w-3xl mx-auto px-4">
+            {kegiatanKami.map((item, index) => (
+              <Card key={index} subTitleCard={item.subtitle} img={item.img} shortDesc={item.shortDesc} imgSmall={item.imgSmall}/>
+            ))}
           </div>
         </div>
       </section>
