@@ -63,7 +63,6 @@ export default function Home() {
           <div className="flex flex-row justify-center items-center py-16 px-4">
             <h1 className="lg:leading-tight font-bold text-[#046CC9] text-4xl text-center">Kegiatan Terbaru</h1>    
           </div>
-          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 w-full max-w-3xl mx-auto px-4">
             {kegiatanKami.map((item, index) => (
               <Card key={index} subTitleCard={item.subtitle} img={item.img} shortDesc={item.shortDesc} imgSmall={item.imgSmall}/>
