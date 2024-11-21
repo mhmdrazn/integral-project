@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-full min-h-screen flex flex-col">
-      <Navbar/>
+       <Navbar highlight="Home" />
 
       {/* Hero section */}
       <section className="md:mt-20 mt-12 px-12 md:px-16 lg:px-52 gap-24 items-center justify-center flex md:flex-row flex-col min-h-[700px] lg:h-[640px] bg-white h-screen">
