@@ -34,7 +34,7 @@ export default function layout() {
             <h1 className="lg:leading-tight font-bold text-[#046CC9] lg:text-5xl text-4xl text-center">Visi dan Misi IDEAL</h1>
           </div>
           
-          <div className='flex justify-center w-full flex-col items-center gap-6'>
+          <div className='flex justify-center w-full flex-col-reverse items-center gap-6'>
             <div className=" md:flex-row flex-col flex md:m-3 px-12 md:px-16 lg:px-24 gap-4 md:gap-16 lg:w-2/3 ustify-normal bg-white drop-shadow-custom-offset rounded-lg py-12 ">
               <div className='content-center  justify-self-center'>
                 <h1 className="lg:leading-tight font-bold md:text-xl text-2xl text-center">Misi</h1>
