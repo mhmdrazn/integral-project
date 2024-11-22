@@ -16,10 +16,10 @@ export default function layout() {
           <Image src='/assets/main-ideal.png' alt="main-ideal" height={240} width={240} className="flex md:hidden"></Image>
 
           <div className="flex flex-col gap-5">
-            <h2 className="lg:text-5xl md:text-3xl text-3xl lg:max-w-[640px] font-bold lg:leading-tight text-[#046CC9] text-center">
+            <h2 className="lg:text-5xl md:text-3xl text-2xl lg:max-w-[640px] font-bold lg:leading-tight text-[#046CC9] text-center">
               #PendidikanUntukSemua
             </h2>
-            <p className="max-w-[574px] text-[#555555] font-medium lg:text-lg md:text-md text-md text-center">
+            <p className="max-w-[574px] text-[#555555] font-medium lg:text-lg md:text-md text-sm text-justify">
               IDEAL (Indonesian Development, Education, and Leadership) merupakan Organisasi non Pemerintah dengan fokus utama mengembangkan potensi generasi muda Indonesia melalui pengembangan pendidikan dan kepemimpinan dengan nilai kolaborasi dan pengabdian. Kami berkomitmen untuk menciptakan akses pendidikan berkualitas yang setara bagi generasi muda Indonesia dan pengembagan kepemimpinan pada generasi muda.
             </p>
             {/* Button */}
