@@ -4,6 +4,8 @@ import Footer from '@/app/components/footer';
 import Image from "next/image";
 
 import CommunityPartners from '@/app/components/community';
+import CompanyPartners from '@/app/components/company';
+import TestimonialCard from '@/app/components/cardTest';
 
 export default function layout() {
   return (
@@ -12,20 +14,30 @@ export default function layout() {
       
       <div className="w-full min-h-screen flex flex-col">
       {/* Hero section */}
-        <section className="md:mt-20 mt-12 px-12 md:px-16 lg:px-52 gap-24 items-center justify-center flex md:flex-row flex-col min-h-[700px] lg:h-[640px] bg-white h-screen">
-          <Image src='/assets/main-ideal.png' alt="main-ideal" height={240} width={240} className="flex md:hidden"></Image>
-
+        <section className="md:mt-20 mt-12 px-4 md:px-8 lg:px-16 gap-24 items-center justify-center flex md:flex-row flex-col min-h-[700px] lg:h-[640px] bg-white">
+          <Image
+            src="/assets/main-ideal.png"
+            alt="main-ideal"
+            height={240}
+            width={240}
+            className="flex md:hidden"
+          />
           <div className="flex flex-col gap-5">
-            <h2 className="lg:text-5xl md:text-3xl text-2xl lg:max-w-[640px] font-bold lg:leading-tight text-[#046CC9] text-center">
-              #PendidikanUntukSemua
+            <h2 className="lg:text-5xl md:text-3xl text-3xl lg:max-w-[640px] font-bold lg:leading-tight text-[#046CC9]">
+              Indonesian Development Education And Leadership
             </h2>
             <p className="max-w-[574px] text-[#555555] font-medium lg:text-lg md:text-md text-sm text-justify">
               IDEAL (Indonesian Development, Education, and Leadership) merupakan Organisasi non Pemerintah dengan fokus utama mengembangkan potensi generasi muda Indonesia melalui pengembangan pendidikan dan kepemimpinan dengan nilai kolaborasi dan pengabdian. Kami berkomitmen untuk menciptakan akses pendidikan berkualitas yang setara bagi generasi muda Indonesia dan pengembagan kepemimpinan pada generasi muda.
             </p>
             {/* Button */}
           </div>
-
-          <Image src='/assets/main-ideal.png' alt="main-ideal" height={370} width={370} className="hidden md:flex"></Image>
+          <Image
+            src="/assets/main-ideal.png"
+            alt="main-ideal"
+            height={370}
+            width={370}
+            className="hidden md:flex"
+          />
         </section>  
       
         {/* Visi Misi  */}
@@ -59,8 +71,8 @@ export default function layout() {
         <section className='lg:py-16 py-12 md:gap-16 gap-8 flex md:flex-col flex-col bg-white items-center w-full justify-center md:px-24 px-8'>
           <div className="lg:leading-tight font-bold text-[#046CC9] lg:text-5xl text-4xl md:text-left text-center">Di Balik IDEAL</div>
           <div className='flex md:flex-row flex-col md:gap-16 gap-8'>
-            <div className='flex flex-col items-center gap-4'>
-              <div className='h-44 w-44 rounded-full overflow-hidden items-center flex bg-green-200'>
+            <div className='flex flex-col items-center gap-4 md:min-w-60'>
+              <div className='md:h-40 md:w-40 h-32 w-32 rounded-full overflow-hidden items-center flex bg-green-200'>
                 <Image src='/assets/people/4.png' alt='fahrizal' height={600} width={600}></Image>
               </div>
               <div className='flex flex-col items-center'>
@@ -69,8 +81,8 @@ export default function layout() {
               </div>
             </div>
 
-            <div className='flex flex-col items-center gap-4'>
-              <div className='h-44 w-44 rounded-full overflow-hidden items-center flex bg-green-200'>
+            <div className='flex flex-col items-center gap-4 md:min-w-60'>
+              <div className='md:h-40 md:w-40 h-32 w-32 rounded-full overflow-hidden items-center flex bg-green-200'>
                 <Image src='/assets/people/3.png' alt='fahrizal' height={600} width={600}></Image>
               </div>
               <div className='flex flex-col items-center'>
@@ -79,8 +91,8 @@ export default function layout() {
               </div>
             </div>
 
-            <div className='flex flex-col items-center gap-4'>
-              <div className='h-44 w-44 rounded-full overflow-hidden items-center flex bg-green-200'>
+            <div className='flex flex-col items-center gap-4 md:min-w-60'>
+              <div className='md:h-40 md:w-40 h-32 w-32 rounded-full overflow-hidden items-center flex bg-green-200'>
                 <Image src='/assets/people/2.png' alt='fahrizal' height={600} width={600}></Image>
               </div>
               <div className='flex flex-col items-center'>
@@ -90,9 +102,9 @@ export default function layout() {
             </div>
           </div>
 
-          <div className='flex md:flex-row flex-col md:gap-16 gap-8'>
+          <div className='flex md:flex-row flex-col md:gap-16 gap-8 md:min-w-60'>
             <div className='flex flex-col items-center gap-4'>
-              <div className='h-44 w-44 rounded-full overflow-hidden items-center flex bg-green-200'>
+              <div className='md:h-40 md:w-40 h-32 w-32 rounded-full overflow-hidden items-center flex bg-green-200'>
                 <Image src='/assets/people/1.png' alt='fahrizal' height={600} width={600}></Image>
               </div>
               <div className='flex flex-col items-center'>
@@ -101,8 +113,8 @@ export default function layout() {
               </div>
             </div>
 
-            <div className='flex flex-col items-center gap-4'>
-              <div className='h-44 w-44 rounded-full overflow-hidden items-center flex bg-green-200'>
+            <div className='flex flex-col items-center gap-4 md:min-w-80'>
+              <div className='md:h-40 md:w-40 h-32 w-32 rounded-full overflow-hidden items-center flex bg-green-200'>
                 <Image src='/assets/people/5.png' alt='fahrizal' height={600} width={600}></Image>
               </div>
               <div className='flex flex-col items-center'>
@@ -148,32 +160,68 @@ export default function layout() {
         <section className='lg:py-16 py-12 md:gap-12 gap-12 flex md:flex-col flex-col bg-white items-center w-full justify-center md:px-24 px-8'>
           <div className="lg:leading-tight font-bold text-[#046CC9] lg:text-5xl text-4xl md:text-left text-center">Apa Kata Mereka?</div>
 
-          <div className='flex lg:flex-row flex-col lg:gap-16 drop-shadow-custom-offset md:gap-12 gap-8 items-center justify-center'>
+          <div className='flex lg:flex-row flex-col lg:gap-16 drop-shadow-custom-offset md:gap-12 gap-8 items-center justify-center'>  
 
-            <div className='flex flex-col gap-10 md:p-12 p-8 items-center justify-center bg-white rounded-2xl lg:min-h-[500px] max-w-[520px]'>
-              <p className='text-[#555555] w-full font-normal lg:text-xl md:text-lg text-md text-center'>“Selama magang di IDEAL Indonesia, banyak banget hal yang aku pelajari, mulai dari kerja sama bareng tim, mengasah problem solving, sampai ngembangin sisi kreatif. Tanggung jawab yang aku dapet ternyata ngasih pengalaman baru yang seru dan pastinya bakal jadi bekal berharga buat perjalanan karierku ke depannya”</p>
-            
-              <div className='flex flex-col items-center'>
-                <div className='font-semibold text-lg'>Erina Argianti S</div>
-                <div className='font-normal text-md'>IDEAL Batch 3</div>
-              </div>
+            <div className="flex flex-col items-center">
+              <TestimonialCard
+                quote="“Selama magang di IDEAL Indonesia, banyak banget hal yang aku pelajari, mulai dari kerja sama bareng tim, mengasah problem solving, sampai ngembangin sisi kreatif. Tanggung jawab yang aku dapet ternyata ngasih pengalaman baru yang seru dan pastinya bakal jadi bekal berharga buat perjalanan karierku ke depannya”"
+                name="Erina Argianti S"
+                batch="IDEAL Batch 3"
+                imageSrc="/assets/people/erina.png"
+                altText="Erina Argianti S"
+              />
             </div>
 
-            <div className='flex flex-col gap-10 md:p-12 p-8 items-center justify-center bg-white rounded-2xl lg:min-h-[500px] max-w-[520px]'>
-              <p className='text-[#555555] w-full font-normal lg:text-lg md:text-md text-sm text-center'>“Menjadi intern di IDEAL batch 3 itu pengalaman yang seru dan berkesan buat saya! Banyak hal yang saya pelajari tentang kepemimpinan dan kerja sama tim. IDEAL memberi saya kesempatan untuk terjun langsung ke berbagai proyek yang mengasah keterampilan untuk karir kedepan. Suasana kerja di sini juga  penuh semangat, bikin saya merasa nyaman untuk berkontribusi. IDEAL adalah tempat yang menyenangkan untuk berkembang, tetap profesional dan juga sangat mendukung&quot;</p>
-            
-              <div className='flex flex-col items-center'>
-                <div className='font-semibold text-lg'>Miladia Azzahra</div>
-                <div className='font-normal text-md'>IDEAL Batch 3</div>
-              </div>
+            <div className="flex flex-col items-center">
+              <TestimonialCard
+                quote="&quot;Menjadi intern di IDEAL batch 3 itu pengalaman yang seru dan berkesan buat saya! Banyak hal yang saya pelajari tentang kepemimpinan dan kerja sama tim. IDEAL memberi saya kesempatan untuk terjun langsung ke berbagai proyek yang mengasah keterampilan untuk karir kedepan. Suasana kerja di sini juga  penuh semangat, bikin saya merasa nyaman untuk berkontribusi. IDEAL adalah tempat yang menyenangkan untuk berkembang, tetap profesional dan juga sangat mendukung&quot;"
+                name="Miladia Azzahra"
+                batch="IDEAL Batch 3"
+                imageSrc="/assets/people/miladia.png"
+                altText="Miladia Azzahra"
+              />
             </div>
+
+            <div className="flex flex-col items-center">
+              <TestimonialCard
+                quote="&quot;Magang di IDEAL batch 1 menurut aku merupakan pengalaman yang super seru dan nggak terlupakan! Dari awal vibes-nya udah positif, apalagi mentornya super baik dan selalu siap bantu. Selama program, aku jadi nemuin skill-skill yang nggak disangka bisa aku kembangin—kayak leadership, problem-solving, komunikasi dsb. pokoknya bersyukur bgt bisa dapet kesempatan buat tumbuh dan berkembang bareng IDEAL!&quot;"
+                name="Nabilandra Fortuna"
+                batch="IDEAL Batch 1"
+                imageSrc="/assets/people/miladia.png"
+                altText="Miladia Azzahra"
+              />
+            </div>
+
+            <div className="flex flex-col items-center">
+              <TestimonialCard
+                quote="&quot;Waktu itu moment baru terjun berorganisasi sehingga ngerasa cukup challenging tapi berkat work culture yang sistematis jadi banyak belajar hal-hal baru secara professional yang berguna di dunia karir sekarang. Secara pribadi, skill yang paling berkembang salah satunya yaitu public speaking karena sebagai PR harus berhubungan dengan banyak pihak👏🏻 terakhir melalui IDEAL juga aku bisa dapat banyak relasi baru & memimpin kerjasama dalam tim&quot;"
+                name="Amanda Shahla"
+                batch="IDEAL Batch 1"
+                imageSrc="/assets/people/miladia.png"
+                altText="Miladia Azzahra"
+              />
+            </div>
+
           </div>
         </section>
-        
-        {/* Out Community Partner */}
+
+        {/* collaborated with  */}
+        <section className='lg:py-16 py-12 md:gap-4 gap-2 flex md:flex-col flex-col bg-white items-center w-full justify-center md:px-24 px-8'>
+          <div className="lg:leading-tight font-bold text-[#046CC9] lg:text-5xl text-4xl md:text-left text-center">Collaborated With</div>
+          {/* <Collaborated/> */}
+        </section>
+
+        {/* Our company partner  */}
+        <section className='lg:py-16 py-12 md:gap-4 gap-2 flex md:flex-col flex-col bg-white items-center w-full justify-center md:px-24 px-8'>
+          <div className="lg:leading-tight font-bold text-[#046CC9] lg:text-5xl text-4xl md:text-left text-center">Company Partner</div>
+          <CompanyPartners/>
+        </section>
+
+        {/* Our Community Partner */}
         <section className='lg:py-16 py-12 md:gap-8 gap-2 flex md:flex-col flex-col bg-white items-center w-full justify-center md:px-24 px-8'>
           <div className="lg:leading-tight font-bold text-[#046CC9] lg:text-5xl text-4xl md:text-left text-center">Community Partner</div>
           <CommunityPartners/>
+          <p className='text-xl text-[#555555] font-semibold'>And Many More...</p>
         </section>
       </div>
       <Footer/>

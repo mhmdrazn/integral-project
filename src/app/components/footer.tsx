@@ -21,16 +21,16 @@ export default function footer() {
                 <div className='flex flex-col md:gap-5 gap-3 items-start'>
                     <div className='font-semibold text-lg text-white'>Contacts</div>
                     <div className='flex flex-col gap-3 items-start'>
-                        <div className='font-light text-md text-white'>halo.ideal@gmail.com</div>
+                        <div className='font-light text-md text-white'>hallo.ideal@gmail.com</div>
                         <div className='font-light text-md text-white'>@ideal.ind</div>
-                        <div className='font-light text-md text-white'>+62 264 2185 605</div>
+                        <div className='font-light text-md text-white'>+62 858-1138-3684</div>
                     </div>
                 </div>
 
                 <div className='flex flex-col md:gap-5 gap-3 items-start'>
                     <div className='font-semibold text-lg text-white'>Our Programs</div>
                     <div className='flex flex-col gap-3 items-start'>
-                        <div className='font-light text-md text-white'>IdeaTalk</div>
+                        <div className='font-light text-md text-white'>IdealTalk</div>
                         <div className='font-light text-md text-white'>Leadership Bootcamp</div>
                         <div className='font-light text-md text-white'>Ideal Youth Ambassador</div>
                         <div className='font-light text-md text-white'>Youth Impact</div>

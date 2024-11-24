@@ -34,7 +34,7 @@ function Page() {
   ];
   const data2=[
     {
-      subtitle: 'IDEATALK',
+      subtitle: 'IDEAL TALKS',
       shortDesc: 'Program yang berfokus kepada pengembangan pendidikan dan kepemimpinan melalui kegiatan Talkshow, pelatihan dan FGD.',
       img: '/assets/idealTalk.png', 
       imgSmall:'/assets/jumlahSiswa.png',
@@ -50,6 +50,12 @@ function Page() {
       shortDesc: 'Program representatif dalam pergerakan pengembangan anak muda.',
       img: '/assets/templateCard.png', 
       imgSmall:'/assets/jumlahSiswa.png',
+    },
+    {
+    subtitle: 'RUANG ASPIRASI MUDA',
+    shortDesc: 'Program tukar pikiran dengan Tokoh Nasional untuk menyampaikan Ide, gagasan dan Inovasi secara langsung kepada pemangku kepentingan',
+    img: '/assets/templateCard.png', 
+    imgSmall:'/assets/jumlahSiswa.png',
     },
     {
       subtitle: 'YOUTH IMPACT',
@@ -105,11 +111,11 @@ function Page() {
             {/* Kegiatan Terbaru */}
         <section>
 
-        <div className=' bg-white flex flex-col place-items-center my-24'>
+        <div className=' bg-white flex flex-col place-items-center items-center my-24'>
           <div className="flex flex-row justify-center items-center py-16 px-4">
           <h1 className="lg:leading-tight font-bold text-[#046CC9] text-4xl text-center">Kegiatan Terbaru</h1>    
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 w-full max-w-3xl mx-auto px-4">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 w-full max-w-6xl mx-auto px-4 items-center justify-items-center">
             {data2.map((item, index) => (
               <Card key={index} subTitleCard={item.subtitle} img={item.img} shortDesc={item.shortDesc} imgSmall={item.imgSmall}/>
             ))}
