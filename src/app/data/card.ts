@@ -9,7 +9,7 @@ export interface Card {
 
 export const kegiatanKami: Card[] = [
     {
-    subtitle: 'IDEATALK',
+    subtitle: 'IDEAL TALKS',
     shortDesc: 'Program yang berfokus kepada pengembangan pendidikan dan kepemimpinan melalui kegiatan Talkshow, pelatihan dan FGD.',
     img: '/assets/idealTalk.png', 
     imgSmall:'/assets/jumlahSiswa.png',
@@ -23,6 +23,12 @@ export const kegiatanKami: Card[] = [
     {
     subtitle: 'IDEAL YOUTH AMBASSASOR',
     shortDesc: 'Program representatif dalam pergerakan pengembangan anak muda.',
+    img: '/assets/templateCard.png', 
+    imgSmall:'/assets/jumlahSiswa.png',
+    },
+    {
+    subtitle: 'RUANG ASPIRASI MUDA',
+    shortDesc: 'Program tukar pikiran dengan Tokoh Nasional untuk menyampaikan Ide, gagasan dan Inovasi secara langsung kepada pemangku kepentingan',
     img: '/assets/templateCard.png', 
     imgSmall:'/assets/jumlahSiswa.png',
     },

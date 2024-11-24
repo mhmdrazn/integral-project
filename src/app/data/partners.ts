@@ -78,3 +78,4 @@ export const partners: Partner[] = [
   { name: "Partner 3", logo: "/logos/youthped.png"},
   { name: "Partner 1", logo: "/logos/youtinspace.png"},
 ];
+
