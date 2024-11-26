@@ -79,10 +79,10 @@ function Page() {
             className="flex md:hidden"
           />
           <div className="flex flex-col gap-5">
-            <h2 className="lg:text-5xl md:text-3xl text-3xl lg:max-w-[640px] font-bold lg:leading-tight text-[#046CC9]">
+            <h2 className="lg:text-5xl md:text-3xl text-2xl lg:max-w-[640px] md:text-left text-center font-bold lg:leading-tight text-[#046CC9]">
               Indonesian Development Education And Leadership
             </h2>
-            <h2 className="lg:text-3xl md:text-3xl text-3xl lg:max-w-[640px] font-light lg:leading-tight">
+            <h2 className="lg:text-3xl md:text-3xl font-medium text-xl md:text-left text-center lg:max-w-[640px] lg:leading-tight">
               #PendidikanUntukSemua
             </h2>
             {/* Button */}
