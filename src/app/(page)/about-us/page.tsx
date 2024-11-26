@@ -2,14 +2,21 @@ import React from 'react';
 import Navbar from '@/app/components/navbar';
 import Footer from '@/app/components/footer';
 import Image from "next/image";
-// import collab from '@/app/components/collaborated';
+
+import Collaborated from '@/app/components/collaborated';
+
+
 
 import CommunityPartners from '@/app/components/community';
 import CompanyPartners from '@/app/components/company';
 import TestimonialCard from '@/app/components/cardTest';
 
+
+
+
 // import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+
 
 export default function layout() {
   return (
@@ -210,10 +217,11 @@ export default function layout() {
         </section>
 
         {/* collaborated with  */}
-        <section className='lg:py-16 py-12 md:gap-4 gap-2 flex md:flex-col flex-col bg-white items-center w-full justify-center md:px-24 px-8'>
-          <div className="lg:leading-tight font-bold text-[#046CC9] lg:text-5xl text-4xl md:text-left text-center">Collaborated With</div>
-          {/* <Collaborated/> */}
+        <section className='lg:py-16 py-12 md:gap-4 gap-2 flex md:flex-col flex-col bg-white items-center w-full justify-center md:px-24 px-8 '>
+          <div className="lg:leading-tight font-bold text-[#046CC9] lg:text-5xl text-4xl md:text-left text-center object-cover">Collaborated With</div>
+          <Collaborated/>
         </section>
+        
 
         {/* Our company partner  */}
         <section className='lg:py-16 py-12 md:gap-4 gap-2 flex md:flex-col flex-col bg-white items-center w-full justify-center md:px-24 px-8'>
