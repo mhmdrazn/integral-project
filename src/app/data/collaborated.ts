@@ -7,6 +7,5 @@ export const collaborated: Collaborated[] = [
   {name: "Partner 5", logo: "/logos/kab-bogor.png"},
   {name: "Partner 6", logo: "/logos/logo-kemenpora.png"},
   {name: "Partner 7", logo: "/logos/forum-osis.jpg"},
-
 ];
 

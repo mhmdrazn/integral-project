@@ -34,34 +34,28 @@ function Page() {
   ];
   const data2=[
     {
-      subtitle: 'IDEAL TALKS',
+      subtitle: 'Onboarding',
       shortDesc: 'Program yang berfokus kepada pengembangan pendidikan dan kepemimpinan melalui kegiatan Talkshow, pelatihan dan FGD.',
-      img: '/assets/events/ideal-talks.png', 
+      img: '/onboard1.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
-      subtitle: 'LEADERSHIP BOOTCAMP',
+      subtitle: 'Onboarding',
       shortDesc: 'Program yang berfokus kepada Kepemimpinan dalam meningkatkan kemampuan leadershipnya melalui pelatihan-pelatihan.',
-      img: '/assets/events/leadership-bootcamp.png', 
+      img: '/onboard2.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
-      subtitle: 'IDEAL YOUTH AMBASSADOR',
+      subtitle: 'GDP',
       shortDesc: 'Program representatif dalam pergerakan pengembangan anak muda.',
-      img: '/assets/templateCard.png', 
+      img: '/gdp.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
-    subtitle: 'RUANG ASPIRASI MUDA',
+    subtitle: 'FDP',
     shortDesc: 'Program tukar pikiran dengan Tokoh Nasional untuk menyampaikan Ide, gagasan dan Inovasi secara langsung kepada pemangku kepentingan',
-    img: '/assets/templateCard.png', 
+    img: '/fdp.png', 
     imgSmall:'/assets/jumlahSiswa.png',
-    },
-    {
-      subtitle: 'YOUTH IMPACT',
-      shortDesc: 'Program untuk memotivasi kaum muda agar melakukan aksi nyata yang memberikan kontribusi positif dalam skala lokal hingga nasional.',
-      img: '/assets/templateCard.png', 
-      imgSmall:'/assets/jumlahSiswa.png',
     }, 
   ];
 
@@ -82,8 +76,8 @@ function Page() {
             <h2 className="lg:text-5xl md:text-3xl text-2xl lg:max-w-[640px] md:text-left text-center font-bold lg:leading-tight text-[#046CC9]">
               Indonesian Development Education And Leadership
             </h2>
-            <h2 className="lg:text-3xl md:text-3xl font-medium text-xl md:text-left text-center lg:max-w-[640px] lg:leading-tight">
-              #PendidikanUntukSemua
+            <h2 className="lg:text-3xl md:text-3xl font-medium text-xl md:text-left text-center text-[#555555] lg:max-w-[640px] lg:leading-tight">
+              Pendidikan Untuk Semua<br/>Tingkatkan Potensi Diri
             </h2>
             {/* Button */}
           </div>
@@ -97,29 +91,29 @@ function Page() {
         </section>       
         {/* Kegiatan Kami */}
         <section>
-          <div className=' bg-white flex flex-col place-items-center my-24'>
-          <div className="flex flex-row justify-center items-center py-16 px-4">
-          <h1 className="lg:leading-tight font-bold text-[#046CC9] text-4xl text-center">Kegiatan Kami</h1>    
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 w-full max-w-3xl mx-auto px-4">
-            {data.map((item, index) => (
-              <Card key={index} subTitleCard={item.subtitle} img={item.img} shortDesc={item.shortDesc} imgSmall={item.imgSmall}/>
-            ))}
-          </div>
+          <div className=' bg-white flex flex-col place-items-center my-4 pb-8'>
+            <div className="flex flex-row justify-center items-center py-16 px-4">
+            <h1 className="lg:leading-tight font-bold text-[#046CC9] text-3xl md:text-4xl text-center">Kegiatan Kami</h1>    
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-9 w-full max-w-3xl mx-auto px-4">
+              {data.map((item, index) => (
+                <Card key={index} subTitleCard={item.subtitle} img={item.img} shortDesc={item.shortDesc} imgSmall={item.imgSmall}/>
+              ))}
+            </div>
           </div>
         </section>
-            {/* Kegiatan Terbaru */}
+        
+        {/* Kegiatan Terbaru */}
         <section>
-
-        <div className=' bg-white flex flex-col place-items-center items-center my-24'>
-          <div className="flex flex-row justify-center items-center py-16 px-4">
-          <h1 className="lg:leading-tight font-bold text-[#046CC9] text-4xl text-center">Kegiatan Terbaru</h1>    
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 w-full max-w-6xl mx-auto px-4 items-center justify-items-center">
-            {data2.map((item, index) => (
-              <Card key={index} subTitleCard={item.subtitle} img={item.img} shortDesc={item.shortDesc} imgSmall={item.imgSmall}/>
-            ))}
-          </div>
+          <div className=' bg-white flex flex-col place-items-center items-center my-4 mb-16'>
+            <div className="flex flex-row justify-center items-center py-16 px-4">
+            <h1 className="lg:leading-tight font-bold text-[#046CC9] text-3xl md:text-4xl text-center">Kegiatan Terbaru</h1>    
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-3xl mx-auto items-center justify-items-center">
+              {data2.map((item, index) => (
+                <Card key={index} subTitleCard={item.subtitle} img={item.img} shortDesc={item.shortDesc} imgSmall={item.imgSmall}/>
+              ))}
+            </div>
           </div>
         </section>
       </div>
