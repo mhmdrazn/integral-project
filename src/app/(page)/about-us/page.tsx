@@ -182,7 +182,7 @@ export default function layout() {
               />
             </div>
 
-            <div className="flex flex-col items-center">
+            {/* <div className="flex flex-col items-center">
               <TestimonialCard
                 quote="&quot;Magang di IDEAL batch 1 menurut aku merupakan pengalaman yang super seru dan nggak terlupakan! Dari awal vibes-nya udah positif, apalagi mentornya super baik dan selalu siap bantu. Selama program, aku jadi nemuin skill-skill yang nggak disangka bisa aku kembangin—kayak leadership, problem-solving, komunikasi dsb. pokoknya bersyukur bgt bisa dapet kesempatan buat tumbuh dan berkembang bareng IDEAL!&quot;"
                 name="Nabilandra Fortuna"
@@ -200,7 +200,7 @@ export default function layout() {
                 imageSrc="/assets/people/miladia.png"
                 altText="Miladia Azzahra"
               />
-            </div>
+            </div> */}
 
           </div>
         </section>
