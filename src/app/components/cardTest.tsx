@@ -10,7 +10,7 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, batch, imageSrc, altText = 'Profile Picture' }) => {
     return (
-        <div className="flex flex-col gap-10 md:p-12 p-8 items-center bg-white rounded-2xl lg:min-h-[500px] justify-between min-w-[560px]">
+        <div className="flex flex-col gap-10 md:p-12 p-8 items-center bg-white rounded-2xl lg:min-h-[500px] justify-between max-w-[560px]">
         <p className="text-[#555555] w-full font-normal md:text-lg text-sm text-center">
             {quote}
         </p>
