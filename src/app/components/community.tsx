@@ -12,7 +12,7 @@ export default function CommunityPartners(): JSX.Element {
             rel="noopener noreferrer"
             className="flex items-center justify-center p-2 rounded-md transition"
         >
-            <div className="md:w-32 md:h-24 h-12 w-16 relative"> {/* Set width and height of the container */}
+            <div className="md:w-32 md:h-24 h-16 w-20 relative"> {/* Set width and height of the container */}
               <Image
                 src={partner.logo}
                 alt={partner.name}
