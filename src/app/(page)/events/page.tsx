@@ -9,25 +9,25 @@ function Page() {
     {
       subtitle: 'Onboarding',
       shortDesc: 'Onboarding merupakan kegiatan awal yang dirancang untuk memperkenalkan anggota baru pada visi, misi, dan nilai-nilai IDEAL.',
-      img: '/assets/onboarding.png', 
+      img: '/assets/events/onboarding.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
       subtitle: 'GDP',
       shortDesc: 'Program yang berfokus kepada Kepemimpinan dalam meningkatkan kemampuan leadershipnya melalui pelatihan-pelatihan',
-      img: '/assets/gdp.png', 
+      img: '/assets/events/gdp.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
       subtitle: 'Functional Development Program',
       shortDesc: 'Program representatif dalam pergerakan pengembangan anak muda.',
-      img: '/assets/idas.png', 
+      img: '/assets/events/fdp.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
       subtitle: 'Bonding',
       shortDesc: 'Program untuk memotivasi kaum muda agar melakukan aksi nyata yang memberikan kontribusi positif dalam skala lokal hingga nasional.',
-      img: '/assets/bonding.png', 
+      img: '/assets/events/bonding.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     }, 
     
@@ -36,13 +36,13 @@ function Page() {
     {
       subtitle: 'IDEAL TALKS',
       shortDesc: 'Program yang berfokus kepada pengembangan pendidikan dan kepemimpinan melalui kegiatan Talkshow, pelatihan dan FGD.',
-      img: '/assets/templateCard.png', 
+      img: '/assets/events/ideal-talks.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
       subtitle: 'LEADERSHIP BOOTCAMP',
       shortDesc: 'Program yang berfokus kepada Kepemimpinan dalam meningkatkan kemampuan leadershipnya melalui pelatihan-pelatihan.',
-      img: '/assets/leadership-bootcamp.png', 
+      img: '/assets/events/leadership-bootcamp.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
