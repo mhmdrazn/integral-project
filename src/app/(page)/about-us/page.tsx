@@ -2,10 +2,14 @@ import React from 'react';
 import Navbar from '@/app/components/navbar';
 import Footer from '@/app/components/footer';
 import Image from "next/image";
+import collab from '@/app/components/collaborated';
 
 import CommunityPartners from '@/app/components/community';
 import CompanyPartners from '@/app/components/company';
 import TestimonialCard from '@/app/components/cardTest';
+
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export default function layout() {
   return (
