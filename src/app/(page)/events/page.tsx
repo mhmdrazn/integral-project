@@ -8,7 +8,7 @@ function Page() {
   const data = [
     {
       subtitle: 'Onboarding',
-      shortDesc: 'hallo',
+      shortDesc: 'Onboarding merupakan kegiatan awal yang dirancang untuk memperkenalkan anggota baru pada visi, misi, dan nilai-nilai IDEAL.',
       img: '/assets/onboarding.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
@@ -21,7 +21,7 @@ function Page() {
     {
       subtitle: 'Functional Development Program',
       shortDesc: 'Program representatif dalam pergerakan pengembangan anak muda.',
-      img: '/assets/templateCard.png', 
+      img: '/assets/idas.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
@@ -36,17 +36,17 @@ function Page() {
     {
       subtitle: 'IDEAL TALKS',
       shortDesc: 'Program yang berfokus kepada pengembangan pendidikan dan kepemimpinan melalui kegiatan Talkshow, pelatihan dan FGD.',
-      img: '/assets/idealTalk.png', 
-      imgSmall:'/assets/jumlahSiswa.png',
-    },
-    {
-      subtitle: 'LEADERSHIP BOOTCAMP',
-      shortDesc: 'Program yang berfokus kepada Kepemimpinan dalam meningkatkan kemampuan leadershipnya melalui pelatihan-pelatihan',
       img: '/assets/templateCard.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
-      subtitle: 'IDEAL YOUTH AMBASSASOR',
+      subtitle: 'LEADERSHIP BOOTCAMP',
+      shortDesc: 'Program yang berfokus kepada Kepemimpinan dalam meningkatkan kemampuan leadershipnya melalui pelatihan-pelatihan.',
+      img: '/assets/leadership-bootcamp.png', 
+      imgSmall:'/assets/jumlahSiswa.png',
+    },
+    {
+      subtitle: 'IDEAL YOUTH AMBASSADOR',
       shortDesc: 'Program representatif dalam pergerakan pengembangan anak muda.',
       img: '/assets/templateCard.png', 
       imgSmall:'/assets/jumlahSiswa.png',
@@ -79,10 +79,10 @@ function Page() {
             className="flex md:hidden"
           />
           <div className="flex flex-col gap-5">
-            <h2 className="lg:text-5xl md:text-3xl text-3xl lg:max-w-[640px] font-bold lg:leading-tight text-[#046CC9]">
+            <h2 className="lg:text-5xl md:text-3xl text-2xl lg:max-w-[640px] md:text-left text-center font-bold lg:leading-tight text-[#046CC9]">
               Indonesian Development Education And Leadership
             </h2>
-            <h2 className="lg:text-3xl md:text-3xl text-3xl lg:max-w-[640px] font-light lg:leading-tight">
+            <h2 className="lg:text-3xl md:text-3xl font-medium text-xl md:text-left text-center lg:max-w-[640px] lg:leading-tight">
               #PendidikanUntukSemua
             </h2>
             {/* Button */}

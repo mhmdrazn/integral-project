@@ -5,7 +5,10 @@ export default function Card({ img = '/assets/templateCard.png', shortDesc = 'Id
     <div className="flex flex-col gap-4 bg-white items-center max-w-96 min-h-[420px] rounded-xl drop-shadow-custom-offset w-fit h-fit px-8 py-8 justify-self-center self-start ">
       <div className="flex flex-col">
         <figure className="bg-white flex justify-center items-center w-fit h-fit rounded-3xl">
-          <Image src={img} alt={shortDesc} width={360} height={240} className='rounded-xl' />
+
+
+          <Image src={img} alt={shortDesc} width={360} height={240} className="rounded-xl" />
+
         </figure>
       </div>
 

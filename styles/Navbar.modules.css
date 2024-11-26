@@ -1,0 +1,48 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+    padding: 0;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    .navLinks {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background-color: #fff;
+      width: 200px;
+      display: none;
+    }
+  
+    .navLinks.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
