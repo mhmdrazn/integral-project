@@ -41,7 +41,7 @@ function Page() {
     },
     {
       subtitle: 'LEADERSHIP BOOTCAMP',
-      shortDesc: 'Program yang berfokus kepada Kepemimpinan dalam meningkatkan kemampuan leadershipnya melalui pelatihan-pelatihan',
+      shortDesc: 'Program yang berfokus kepada Kepemimpinan dalam meningkatkan kemampuan leadershipnya melalui pelatihan-pelatihan.',
       img: '/assets/leadership-bootcamp.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
