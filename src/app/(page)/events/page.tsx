@@ -8,7 +8,7 @@ function Page() {
   const data = [
     {
       subtitle: 'Onboarding',
-      shortDesc: 'hallo',
+      shortDesc: 'Onboarding merupakan kegiatan awal yang dirancang untuk memperkenalkan anggota baru pada visi, misi, dan nilai-nilai IDEAL.',
       img: '/assets/onboarding.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
@@ -21,7 +21,7 @@ function Page() {
     {
       subtitle: 'Functional Development Program',
       shortDesc: 'Program representatif dalam pergerakan pengembangan anak muda.',
-      img: '/assets/templateCard.png', 
+      img: '/assets/idas.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
@@ -36,7 +36,7 @@ function Page() {
     {
       subtitle: 'IDEAL TALKS',
       shortDesc: 'Program yang berfokus kepada pengembangan pendidikan dan kepemimpinan melalui kegiatan Talkshow, pelatihan dan FGD.',
-      img: '/assets/idealTalk.png', 
+      img: '/assets/templateCard.png', 
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
@@ -46,7 +46,7 @@ function Page() {
       imgSmall:'/assets/jumlahSiswa.png',
     },
     {
-      subtitle: 'IDEAL YOUTH AMBASSASOR',
+      subtitle: 'IDEAL YOUTH AMBASSADOR',
       shortDesc: 'Program representatif dalam pergerakan pengembangan anak muda.',
       img: '/assets/templateCard.png', 
       imgSmall:'/assets/jumlahSiswa.png',

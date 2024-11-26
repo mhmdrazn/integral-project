@@ -11,7 +11,7 @@ export const kegiatanKami: Card[] = [
     {
     subtitle: 'IDEAL TALKS',
     shortDesc: 'Program yang berfokus kepada pengembangan pendidikan dan kepemimpinan melalui kegiatan Talkshow, pelatihan dan FGD.',
-    img: '/assets/idealTalk.png', 
+    img: '/assets/templateCard.png', 
     imgSmall:'/assets/jumlahSiswa.png',
     },
     {
