@@ -58,7 +58,7 @@ export const partners: Partner[] = [
   { name: "Partner 3", logo: "/logos/sc.png"},
 
   { name: "Partner 1", logo: "/logos/senandika.png"},
-//   { name: "Partner 2", logo: "/logos/serooja.png"},
+  { name: "Partner 2", logo: "/logos/serooja2.png"},
   { name: "Partner 3", logo: "/logos/shareipb.png"},
 
   { name: "Partner 1", logo: "/logos/sharing.png"},
@@ -69,7 +69,7 @@ export const partners: Partner[] = [
   { name: "Partner 2", logo: "/logos/teenseduc.png"},
   { name: "Partner 3", logo: "/logos/teenuplive.png"},
 
-//   { name: "Partner 1", logo: "/logos/temanambis.png"},
+  { name: "Partner 1", logo: "/logos/temanambis3.jpg"},
   { name: "Partner 2", logo: "/logos/tempatbelajar.png"},
   { name: "Partner 3", logo: "/logos/tfisc.png"},
 
