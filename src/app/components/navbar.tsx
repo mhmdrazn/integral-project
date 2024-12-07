@@ -19,9 +19,9 @@ const Navbar: React.FC<NavbarProps> = ({ highlight }) => {
   return (
     <div className="flex flex-row items-center justify-between px-4 md:px-16 lg:px-52 fixed min-h-20 w-full bg-background z-20">
       {/* Logo */}
-      <a href="#">
+      <Link href="/">
         <Image src="/assets/logo-ideal.png" width={85.71} height={40} alt="Logo" />
-      </a>
+      </Link>
 
       {/* Hamburger Icon for Mobile */}
       <div className="md:hidden">
